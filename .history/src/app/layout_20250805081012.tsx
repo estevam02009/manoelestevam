@@ -23,8 +23,7 @@ export const metadata: Metadata = {
     "Desenvolvimento de Software",
     "Programação de Sistemas",
     "Desenvolvimento de Aplicações",
-    "Programação de Software"
-  ]
+    "Programação de Software",
 };
 
 export default function RootLayout({
@@ -35,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className='antialiased'
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

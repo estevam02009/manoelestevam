@@ -1,18 +1,18 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import {
-  ChevronDown,
-  Code,
-  Database,
-  Server,
-  Smartphone,
-  Globe,
-  Mail,
-  Phone,
-  MapPin,
-  Github,
-  Linkedin,
+import { 
+  ChevronDown, 
+  Code, 
+  Database, 
+  Server, 
+  Smartphone, 
+  Globe, 
+  Mail, 
+  Phone, 
+  MapPin, 
+  Github, 
+  Linkedin, 
   ExternalLink,
   Calendar,
   Download,
@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-
+      
       // Update active section based on scroll position
       const sections = ['hero', 'about', 'projects', 'experience', 'contact'];
       const current = sections.find(section => {
@@ -56,8 +56,8 @@ function App() {
     { name: 'React/Next.js', level: 95, color: 'bg-blue-500' },
     { name: 'Node.js/Express', level: 90, color: 'bg-green-500' },
     { name: 'TypeScript', level: 88, color: 'bg-blue-600' },
-    { name: 'PHP/Laravel', level: 85, color: 'bg-yellow-500' },
-    { name: 'MYSQL/MongoDB', level: 82, color: 'bg-indigo-500' },
+    { name: 'Python/Django', level: 85, color: 'bg-yellow-500' },
+    { name: 'PostgreSQL/MongoDB', level: 82, color: 'bg-indigo-500' },
     { name: 'AWS/Docker', level: 80, color: 'bg-orange-500' },
   ];
 
@@ -112,22 +112,24 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
-        }`}>
+      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+      }`}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold text-gray-800">
-              Manoel Estevam
+              Alex Johnson
             </div>
-
+            
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               {['Sobre', 'Projetos', 'Experiencia', 'Contato'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className={`text-sm font-medium transition-colors duration-200 hover:text-blue-600 ${activeSection === item.toLowerCase() ? 'text-blue-600' : 'text-gray-700'
-                    }`}
+                  className={`text-sm font-medium transition-colors duration-200 hover:text-blue-600 ${
+                    activeSection === item.toLowerCase() ? 'text-blue-600' : 'text-gray-700'
+                  }`}
                 >
                   {item}
                 </button>
@@ -171,24 +173,24 @@ function App() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Criando experiências digitais excepcionais com tecnologias modernas.
-              Apaixonado por criar aplicativos escaláveis que fazem a diferença.
+              Crafting exceptional digital experiences with modern technologies. 
+              Passionate about building scalable applications that make a difference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => scrollToSection('projects')}
                 className="bg-blue-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-700 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
-                Ver Meu Trabalho
+                View My Work
               </button>
               <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-medium hover:border-gray-400 transition-all duration-200 flex items-center justify-center gap-2">
                 <Download size={20} />
-                Baixar Currículo
+                Download Resume
               </button>
             </div>
           </div>
         </div>
-
+        
         <button
           onClick={() => scrollToSection('about')}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
@@ -201,11 +203,10 @@ function App() {
       <section id="about" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Sobre Mim</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Eu sou um desenvolvedor full stack apaixonado por criar experiências digitais excepcionais.
-              Com 5+ anos de experiência, construí aplicativos web que combinam design elegante com funcionalidade robusta.
-              Minha paixão por tecnologia me levou a explorar novas ferramentas e frameworks, sempre buscando aprimorar minhas habilidades.
+              I'm a passionate full stack developer with 5+ years of experience building 
+              web applications that combine beautiful design with robust functionality.
             </p>
           </div>
 
@@ -217,9 +218,9 @@ function App() {
                 className="rounded-2xl shadow-xl w-full"
               />
             </div>
-
+            
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Habilidades & Especialidade</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Skills & Expertise</h3>
               <div className="space-y-4">
                 {skills.map((skill) => (
                   <div key={skill.name}>
@@ -246,12 +247,12 @@ function App() {
                 <div className="text-center p-4 bg-green-50 rounded-lg">
                   <Server className="mx-auto mb-2 text-green-600" size={32} />
                   <h4 className="font-semibold text-gray-900">Backend</h4>
-                  <p className="text-sm text-gray-600">Node.js, PHP, APIs</p>
+                  <p className="text-sm text-gray-600">Node.js, Python, APIs</p>
                 </div>
                 <div className="text-center p-4 bg-purple-50 rounded-lg">
                   <Database className="mx-auto mb-2 text-purple-600" size={32} />
                   <h4 className="font-semibold text-gray-900">Database</h4>
-                  <p className="text-sm text-gray-600">MYSQL, MongoDB</p>
+                  <p className="text-sm text-gray-600">PostgreSQL, MongoDB</p>
                 </div>
                 <div className="text-center p-4 bg-orange-50 rounded-lg">
                   <Globe className="mx-auto mb-2 text-orange-600" size={32} />
@@ -268,13 +269,13 @@ function App() {
       <section id="projects" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Projetos Destacados</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
             <p className="text-xl text-gray-600">
-              Aqui estão alguns dos meus projetos mais recentes que mostram minhas habilidades e experiência.
+              Here are some of my recent projects that showcase my skills and experience.
             </p>
           </div>
 
-          {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div
                 key={index}
@@ -288,7 +289,7 @@ function App() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
                   <p className="text-gray-600 mb-4">{project.description}</p>
-
+                  
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech) => (
                       <span
@@ -299,7 +300,7 @@ function App() {
                       </span>
                     ))}
                   </div>
-
+                  
                   <div className="flex gap-4">
                     <a
                       href={project.demo}
@@ -319,7 +320,7 @@ function App() {
                 </div>
               </div>
             ))}
-          </div> */}
+          </div>
         </div>
       </section>
 
@@ -327,15 +328,15 @@ function App() {
       <section id="experience" className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Experiência</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Experience</h2>
             <p className="text-xl text-gray-600">
-              Minha jornada profissinal na desenvolvimento de software.
+              My professional journey in software development.
             </p>
           </div>
 
-          {/* <div className="relative">
+          <div className="relative">
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-200"></div>
-
+            
             <div className="space-y-12">
               {experiences.map((exp, index) => (
                 <div key={index} className="relative flex items-start">
@@ -352,7 +353,7 @@ function App() {
                 </div>
               ))}
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
 
@@ -360,35 +361,35 @@ function App() {
       <section id="contact" className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Vamos Trabalhar Juntos</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Let's Work Together</h2>
             <p className="text-xl text-gray-600">
-              Pronto para trazer seu próximo projeto ao life? Eu adoraria ouvir de você.
+              Ready to bring your next project to life? I'd love to hear from you.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Contato</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
                   <Mail className="text-blue-600" size={24} />
                   <div>
                     <p className="font-medium text-gray-900">Email</p>
-                    <p className="text-gray-600">manoel.estevam@email.com</p>
+                    <p className="text-gray-600">alex.johnson@email.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone className="text-blue-600" size={24} />
                   <div>
-                    <p className="font-medium text-gray-900">Telefone</p>
-                    <p className="text-gray-600">+1 (84) 99115-1003</p>
+                    <p className="font-medium text-gray-900">Phone</p>
+                    <p className="text-gray-600">+1 (555) 123-4567</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <MapPin className="text-blue-600" size={24} />
                   <div>
-                    <p className="font-medium text-gray-900">Localização</p>
-                    <p className="text-gray-600">Caraúbas, RN</p>
+                    <p className="font-medium text-gray-900">Location</p>
+                    <p className="text-gray-600">San Francisco, CA</p>
                   </div>
                 </div>
               </div>
@@ -412,12 +413,12 @@ function App() {
             <form className="space-y-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Nome
+                  Name
                 </label>
                 <input
                   type="text"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                  placeholder="Seu nome"
+                  placeholder="Your name"
                 />
               </div>
               <div>
@@ -427,24 +428,24 @@ function App() {
                 <input
                   type="email"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                  placeholder="seu.email@example.com"
+                  placeholder="your.email@example.com"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Mensagem
+                  Message
                 </label>
                 <textarea
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
-                  placeholder="Conte-me sobre seu projeto, sua ideia ou qualquer outra coisa."
+                  placeholder="Tell me about your project..."
                 ></textarea>
               </div>
               <button
                 type="submit"
                 className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-700 transition-all duration-200 transform hover:scale-105"
               >
-                Enviar Mensagem
+                Send Message
               </button>
             </form>
           </div>
@@ -455,9 +456,9 @@ function App() {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-4">Manoel Estevam</h3>
+            <h3 className="text-2xl font-bold mb-4">Alex Johnson</h3>
             <p className="text-gray-400 mb-6">
-              Desenvolvedor Full Stack • Construindo o futuro, uma linha de código por vez
+              Full Stack Developer • Building the future, one line of code at a time
             </p>
             <div className="flex justify-center gap-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -472,7 +473,7 @@ function App() {
             </div>
             <div className="border-t border-gray-800 mt-8 pt-8">
               <p className="text-gray-400 text-sm">
-                © 2024 Manoel Estevam. All rights reserved.
+                © 2024 Alex Johnson. All rights reserved.
               </p>
             </div>
           </div>

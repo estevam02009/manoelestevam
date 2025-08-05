@@ -274,7 +274,7 @@ function App() {
             </p>
           </div>
 
-          {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div
                 key={index}
@@ -319,7 +319,7 @@ function App() {
                 </div>
               </div>
             ))}
-          </div> */}
+          </div>
         </div>
       </section>
 
@@ -333,7 +333,7 @@ function App() {
             </p>
           </div>
 
-          {/* <div className="relative">
+          <div className="relative">
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-200"></div>
 
             <div className="space-y-12">
@@ -352,7 +352,7 @@ function App() {
                 </div>
               ))}
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
 
@@ -412,12 +412,12 @@ function App() {
             <form className="space-y-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Nome
+                  Name
                 </label>
                 <input
                   type="text"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                  placeholder="Seu nome"
+                  placeholder="Your name"
                 />
               </div>
               <div>
@@ -427,24 +427,24 @@ function App() {
                 <input
                   type="email"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                  placeholder="seu.email@example.com"
+                  placeholder="your.email@example.com"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Mensagem
+                  Message
                 </label>
                 <textarea
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
-                  placeholder="Conte-me sobre seu projeto, sua ideia ou qualquer outra coisa."
+                  placeholder="Tell me about your project..."
                 ></textarea>
               </div>
               <button
                 type="submit"
                 className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-700 transition-all duration-200 transform hover:scale-105"
               >
-                Enviar Mensagem
+                Send Message
               </button>
             </form>
           </div>
@@ -455,9 +455,9 @@ function App() {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-4">Manoel Estevam</h3>
+            <h3 className="text-2xl font-bold mb-4">Alex Johnson</h3>
             <p className="text-gray-400 mb-6">
-              Desenvolvedor Full Stack • Construindo o futuro, uma linha de código por vez
+              Full Stack Developer • Building the future, one line of code at a time
             </p>
             <div className="flex justify-center gap-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -472,7 +472,7 @@ function App() {
             </div>
             <div className="border-t border-gray-800 mt-8 pt-8">
               <p className="text-gray-400 text-sm">
-                © 2024 Manoel Estevam. All rights reserved.
+                © 2024 Alex Johnson. All rights reserved.
               </p>
             </div>
           </div>

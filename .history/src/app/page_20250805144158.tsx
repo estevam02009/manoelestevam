@@ -274,7 +274,7 @@ function App() {
             </p>
           </div>
 
-          {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div
                 key={index}
@@ -319,7 +319,7 @@ function App() {
                 </div>
               </div>
             ))}
-          </div> */}
+          </div>
         </div>
       </section>
 
@@ -333,7 +333,7 @@ function App() {
             </p>
           </div>
 
-          {/* <div className="relative">
+          <div className="relative">
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-200"></div>
 
             <div className="space-y-12">
@@ -352,7 +352,7 @@ function App() {
                 </div>
               ))}
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
 

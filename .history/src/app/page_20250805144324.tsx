@@ -333,7 +333,7 @@ function App() {
             </p>
           </div>
 
-          {/* <div className="relative">
+          <div className="relative">
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-200"></div>
 
             <div className="space-y-12">
@@ -352,7 +352,7 @@ function App() {
                 </div>
               ))}
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
 
